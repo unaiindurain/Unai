@@ -291,6 +291,6 @@ body {
 
     /* Clase que activaremos con JS */
     .nav-links.active {
-        display: flex;
+        display: flex !important;
     }
 }
