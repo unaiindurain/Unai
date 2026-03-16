@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | UNAI.DEV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body class="main-container">
+
+    <nav class="navbar animate-fade-in-up">
+        <div class="nav-logo">UNAI.DEV</div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="nav-links" id="nav-menu">
+            <a href="index.html">Inicio</a>
+            <a href="sobre-mi.html">Sobre mi</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contacto.html" class="btn-contact">Contacto</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <span class="badge animate-fade-in-up">Disponibilidad Inmediata</span>
+        <h1 class="hero-title animate-fade-in-up delay-1">
+            ¿Hablamos de tu <span class="text-gradient">Próximo Paso</span>?
+        </h1>
+        <p class="hero-description animate-fade-in-up delay-2">
+            Si buscas un desarrollo que no use plantillas y priorice el rendimiento, estás en el lugar correcto.
+        </p>
+    </header>
+
+    <section class="portfolio-grid-section" style="padding-top: 0;">
+        <div class="container"
+            style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem;">
+
+            <div data-aos="fade-right">
+                <h2 style="color: white; margin-bottom: 2rem;">Información de <span
+                        class="text-gradient">Contacto</span></h2>
+
+                <div style="display: grid; gap: 1.5rem;">
+                    <div class="project-card"
+                        style="padding: 1.5rem; flex-direction: row; align-items: center; gap: 1rem;">
+                        <i class="fa-solid fa-envelope" style="color: #60a5fa; font-size: 1.5rem;"></i>
+                        <div>
+                            <p style="font-size: 0.8rem; color: #6b7280; margin: 0;">Email</p>
+                            <a href="mailto:unaiindurain20@gmail.com"
+                                style="color: white; font-weight: 600;">unaiindurain20@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card"
+                        style="padding: 1.5rem; flex-direction: row; align-items: center; gap: 1rem;">
+                        <i class="fa-solid fa-phone" style="color: #60a5fa; font-size: 1.5rem;"></i>
+                        <div>
+                            <p style="font-size: 0.8rem; color: #6b7280; margin: 0;">Teléfono</p>
+                            <a href="tel:+34671609256"
+                                style="color: white; font-weight: 600;">671 60 92 56</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card"
+                        style="padding: 1.5rem; flex-direction: row; align-items: center; gap: 1rem;">
+                        <i class="fa-brands fa-linkedin" style="color: #2dd4bf; font-size: 1.5rem;"></i>
+                        <div>
+                            <p style="font-size: 0.8rem; color: #6b7280; margin: 0;">LinkedIn</p>
+                            <a href="#" style="color: white; font-weight: 600;">linkedin.com/in/unaiindurain</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card"
+                        style="padding: 1.5rem; flex-direction: row; align-items: center; gap: 1rem;">
+                        <i class="fa-solid fa-location-dot" style="color: #a855f7; font-size: 1.5rem;"></i>
+                        <div>
+                            <p style="font-size: 0.8rem; color: #6b7280; margin: 0;">Ubicación</p>
+                            <p style="color: white; font-weight: 600; margin: 0;">España (Remoto)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" style="padding: 2.5rem;" data-aos="fade-left">
+                <form action="#" style="display: grid; gap: 1.2rem;">
+                    <div style="display: grid; gap: 0.5rem;">
+                        <label style="color: #9ca3af; font-size: 0.9rem;">Nombre completo</label>
+                        <input type="text" placeholder="Ej. Alex García" class="form-input">
+                    </div>
+
+                    <div style="display: grid; gap: 0.5rem;">
+                        <label style="color: #9ca3af; font-size: 0.9rem;">Correo electrónico</label>
+                        <input type="email" placeholder="alex@ejemplo.com" class="form-input">
+                    </div>
+
+                    <div style="display: grid; gap: 0.5rem;">
+                        <label style="color: #9ca3af; font-size: 0.9rem;">Mensaje</label>
+                        <textarea rows="4" placeholder="¿En qué puedo ayudarte?" class="form-input"
+                            style="resize: none;"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary"
+                        style="width: 100%; justify-content: center; margin-top: 1rem; border: none; cursor: pointer;">
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane" style="margin-left: 10px;"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <div class="nav-logo">UNAI.DEV</div>
+            <p>Arquitectura web sin plantillas. Enfocado en el rendimiento y la precisión técnica.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Navegación</h4>
+            <a href="index.html">Inicio</a>
+            <a href="sobre-mi.html">Sobre mí</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="footer-social">
+            <h4>Redes</h4>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 UNAI.DEV — Hecho con código nativo.</p>
+    </div>
+</footer>
+
+</html>

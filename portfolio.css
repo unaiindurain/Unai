@@ -1,0 +1,143 @@
+.portfolio-grid-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem 10rem;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #60a5fa;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.project-image {
+    height: 240px;
+    background: #1e293b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.img-placeholder {
+    font-weight: 900;
+    color: #475569;
+    letter-spacing: 2px;
+}
+
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.btn-view {
+    background: white;
+    color: #0f172a;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 700;
+}
+
+.project-info {
+    padding: 2rem;
+}
+
+.project-category {
+    font-size: 0.7rem;
+    color: #2dd4bf;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.project-info h3 {
+    color: white;
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.project-info p {
+    color: #9ca3af;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.project-tags {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.project-tags span {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.5rem;
+    font-size: 0.7rem;
+    color: #cbd5e1;
+}
+
+.project-card.coming-soon {
+    border-style: dashed;
+    opacity: 0.6;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    position: relative;
+}
+
+/* ESTO ES PARA QUE EL LOGO SEA SUTIL Y NO MOLESTE */
+.portfolio-grid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: grayscale(100%) opacity(0.05);
+    /* Lo hace casi invisible y gris */
+    z-index: 0;
+}
+
+.project-card {
+    position: relative;
+    z-index: 1;
+    /* Esto pone las tarjetas por delante del logo */
+    background: #0f172a;
+    /* Fondo sólido para que no se transparente el logo bajo el texto */
+}
+
+.project-logo-img {
+    width: 60%; /* Ajusta el tamaño según prefieras */
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.5)); /* Le da profundidad */
+}

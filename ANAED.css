@@ -1,0 +1,25 @@
+/* --- BOTÓN DE DONACIÓN ESPECIAL --- */
+.btn-donation {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    color: #a855f7; /* Color púrpura/magenta */
+    border: 2px solid #a855f7;
+    padding: 1rem 2.5rem;
+    border-radius: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-donation:hover {
+    background: #a855f7;
+    color: white !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(168, 85, 247, 0.2);
+}
+
+.btn-donation:active {
+    transform: scale(0.98);
+}

@@ -1,0 +1,52 @@
+/* --- ESTILOS FORMULARIO CONTACTO --- */
+.form-input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #60a5fa;
+    background: rgba(96, 165, 250, 0.05);
+    box-shadow: 0 0 15px rgba(96, 165, 250, 0.1);
+}
+
+.form-input::placeholder {
+    color: #4b5563;
+}
+
+/* --- BOTÓN PRIMARIO (El azul definitivo) --- */
+.btn-primary {
+    background: #2563eb; /* Azul base */
+    color: white !important; /* Texto blanco obligatorio */
+    padding: 1rem 2rem;
+    border-radius: 1.25rem;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    border: none; /* Quita el borde por defecto del botón */
+    cursor: pointer; /* Cambia el cursor a mano */
+    text-decoration: none; /* Por si es un enlace <a> */
+}
+
+/* Efecto Hover (Al pasar el ratón) */
+.btn-primary:hover {
+    background: #1d4ed8; /* Un azul un poco más oscuro */
+    transform: scale(1.03); /* Se agranda un pelín */
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3); /* Sombra azul sutil */
+}
+
+/* Efecto Active (Al clicar) */
+.btn-primary:active {
+    transform: scale(0.98); /* Se hunde un poco */
+}

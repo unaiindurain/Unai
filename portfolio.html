@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | UNAI.DEV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body class="main-container">
+
+    <nav class="navbar animate-fade-in-up">
+        <div class="nav-logo">UNAI.DEV</div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="nav-links" id="nav-menu">
+            <a href="index.html">Inicio</a>
+            <a href="sobre-mi.html">Sobre mi</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contacto.html" class="btn-contact">Contacto</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <span class="badge animate-fade-in-up">Portfolio Seleccionado</span>
+        <h1 class="hero-title animate-fade-in-up delay-1">
+            Mis <span class="text-gradient">Proyectos</span>
+        </h1>
+        <p class="hero-description animate-fade-in-up delay-2">
+            Desde soluciones industriales hasta herramientas digitales a medida. Calidad sobre cantidad.
+        </p>
+    </header>
+
+    <section class="portfolio-grid-section">
+        <div class="portfolio-grid">
+
+            <div class="project-card featured Elektradia" data-aos="fade-up">
+                <div class="project-image">
+                    <img src="img/logo.png" alt="Elektradia Logo" class="project-logo-img">
+                    <div class="project-overlay">
+                        <a href="https://elektradia.com" target="_blank" class="btn-view">Visitar Web</a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Caso de Éxito • Industrial</span>
+                    <h3>Elektradia Web Tool</h3>
+                    <p>Optimización técnica para ingeniería: SEO industrial, cookies con LocalStorage y carga ultra
+                        rápida.</p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>JS Nativo</span>
+                        <span>SEO</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card coming-soon" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-image"><i class="fa-solid fa-plus"></i></div>
+                <div class="project-info">
+                    <span class="project-category">En desarrollo</span>
+                    <h3>Nuevo Proyecto</h3>
+                    <p>Trabajando en la próxima solución digital. Disponible muy pronto.</p>
+                </div>
+            </div>
+
+            <div class="project-card coming-soon" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-image"><i class="fa-solid fa-code-branch"></i></div>
+                <div class="project-info">
+                    <span class="project-category">Colaboración</span>
+                    <h3>¿Tu idea aquí?</h3>
+                    <p>Si buscas un desarrollo sólido y sin plantillas, hablemos de tu próximo paso.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <div class="nav-logo">UNAI.DEV</div>
+            <p>Arquitectura web sin plantillas. Enfocado en el rendimiento y la precisión técnica.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Navegación</h4>
+            <a href="index.html">Inicio</a>
+            <a href="sobre-mi.html">Sobre mí</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="footer-social">
+            <h4>Redes</h4>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 UNAI.DEV — Hecho con código nativo.</p>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,101 @@
+/* --- ESTILOS RECUPERADOS: PÁGINA DE INICIO --- */
+
+.hero {
+    padding: 10rem 1.5rem 5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Badge de disponibilidad */
+.badge {
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(45, 212, 191, 0.3);
+    color: #2dd4bf;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background: rgba(45, 212, 191, 0.05);
+    margin-bottom: 1rem;
+}
+
+/* Título principal con tamaño fluido */
+.hero-title {
+    font-size: clamp(3rem, 8vw, 5rem); 
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.hero-description {
+    color: #9ca3af;
+    font-size: 1.25rem;
+    max-width: 40rem;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+/* --- BOTONES Y ACCIONES --- */
+.hero-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 1.25rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #3b82f6;
+    transform: scale(1.05);
+}
+
+/* --- TECH STACK (Las burbujas de iconos) --- */
+.tech-stack {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.tech-pill {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    border: 2px solid #0f172a;
+    background: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-left: -0.75rem; /* Efecto de solapamiento */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Color específico para cada tecnología si quieres */
+.tech-pill:nth-child(1) { color: #f7df1e; } /* JS */
+.tech-pill:nth-child(2) { color: #61dafb; } /* React */
+.tech-pill:nth-child(3) { color: #38bdf8; } /* Tailwind */
+
+.tech-label {
+    margin-left: 1rem;
+    color: #6b7280;
+    font-size: 0.875rem;
+    font-weight: 500;
+}

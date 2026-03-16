@@ -1,0 +1,116 @@
+/* --- ESTILOS PÁGINA SOBRE MÍ --- */
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-intro {
+    margin-bottom: 4rem;
+}
+
+.about-intro h2 {
+    color: white;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-text {
+    color: #9ca3af;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Reutilización y ajuste de tarjetas del portfolio */
+.diferenciadores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.diff-card {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.diff-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.diff-card i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.diff-card h4 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.diff-card p {
+    color: #9ca3af;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Colores específicos para los bordes de las tarjetas */
+.border-blue { border-color: rgba(96, 165, 250, 0.3); }
+.border-teal { border-color: rgba(45, 212, 191, 0.3); }
+.border-purple { border-color: rgba(168, 85, 247, 0.3); }
+
+/* Banner de Llamada a la Acción (CTA) */
+.cta-banner {
+    margin-top: 5rem;
+    text-align: center;
+    background: rgba(37, 99, 235, 0.1);
+    padding: 3rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+.cta-banner h3 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.cta-banner p {
+    color: #9ca3af;
+    margin-bottom: 2rem;
+}
+
+/* Ajuste para el botón si se usa flex */
+.cta-banner .btn-primary {
+    display: inline-flex;
+    text-decoration: none;
+}
+
+/* Estilos para las etiquetas de tecnología en Sobre Mí */
+.tech-badge {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    color: #e5e7eb;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+    background: rgba(96, 165, 250, 0.1);
+    border-color: #60a5fa;
+    transform: translateY(-3px);
+}
+
+.btn-primary {
+    justify-content: center;
+    margin: 0 auto;
+    text-decoration: none;
+}
