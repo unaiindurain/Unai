@@ -5,17 +5,17 @@ AOS.init({
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const menuBtn = document.getElementById('mobile-menu'); // El botón de las 3 rayitas
-    const navMenu = document.getElementById('nav-menu');    // El contenedor de los enlaces
+    const menuBtn = document.getElementById('mobile-menu');
+    const navMenu = document.getElementById('nav-menu');
 
     if (menuBtn && navMenu) {
-        // 1. Abrir/Cerrar al dar clic en el botón
         menuBtn.addEventListener('click', (e) => {
             e.stopPropagation();
-            navMenu.classList.toggle('active'); // Usamos 'active' que es la que pusimos en style.css
+            // Usamos 'show' como en tu otra página
+            navMenu.classList.toggle('show');
             menuBtn.classList.toggle('is-active');
             
-            // Cambiar icono visualmente
+            // Cambiamos el icono visualmente
             const icon = menuBtn.querySelector('i');
             if (icon) {
                 icon.classList.toggle('fa-bars');
@@ -23,19 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // 2. Cerrar automáticamente al hacer clic en cualquier enlace
-        const navLinks = navMenu.querySelectorAll('a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-            });
-        });
-
-        // 3. Cerrar si el usuario hace clic fuera del menú
+        // Cerrar si haces clic fuera del menú
         document.addEventListener('click', (e) => {
             if (!navMenu.contains(e.target) && !menuBtn.contains(e.target)) {
-                navMenu.classList.remove('active');
-                // Resetear icono a barras
+                navMenu.classList.remove('show');
+                menuBtn.classList.remove('is-active');
+                
                 const icon = menuBtn.querySelector('i');
                 if (icon) {
                     icon.classList.add('fa-bars');
