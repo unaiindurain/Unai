@@ -11,11 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (menuBtn && navMenu) {
         menuBtn.addEventListener('click', (e) => {
             e.stopPropagation();
-            // Usamos 'show' como en tu otra página
-            navMenu.classList.toggle('show');
+            // CAMBIADO: Ahora usamos 'active' para coincidir con style.css
+            navMenu.classList.toggle('active');
             menuBtn.classList.toggle('is-active');
             
-            // Cambiamos el icono visualmente
             const icon = menuBtn.querySelector('i');
             if (icon) {
                 icon.classList.toggle('fa-bars');
@@ -23,12 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Cerrar si haces clic fuera del menú
+        // Cerrar al hacer clic fuera
         document.addEventListener('click', (e) => {
             if (!navMenu.contains(e.target) && !menuBtn.contains(e.target)) {
-                navMenu.classList.remove('show');
+                navMenu.classList.remove('active');
                 menuBtn.classList.remove('is-active');
-                
                 const icon = menuBtn.querySelector('i');
                 if (icon) {
                     icon.classList.add('fa-bars');
