@@ -288,7 +288,8 @@ body {
     }
 
     /* Clase que lo hace aparecer (la que activa el JS) */
-    .nav-links.show {
-        right: 0 !important;
+    .nav-links.active {
+        display: flex !important; /* El !important es clave aquí */
+        flex-direction: column !important;
     }
 }
