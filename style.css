@@ -274,25 +274,21 @@ body {
     }
 
     .nav-links {
-        display: none; /* Oculto por defecto */
+        position: fixed;
+        top: 0;
+        right: -100%; 
+        height: 100vh;
+        width: 280px;
+        background: rgba(15, 23, 42, 0.98);
+        display: flex !important; /* Usamos flex para la columna */
         flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: rgba(15, 23, 42, 0.95);
-        backdrop-filter: blur(15px);
-        padding: 2rem;
-        border-radius: 0 0 1.25rem 1.25rem;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        gap: 1.5rem;
-        text-align: center;
+        padding: 100px 30px;
+        transition: 0.4s ease-in-out;
+        z-index: 999;
     }
 
-    /* Clase que activaremos con JS */
-    .nav-links.active {
-        display: flex !important;
-        opacity: 1 !important;
-        visibility: visible !important;
+    /* Clase que lo hace aparecer (la que activa el JS) */
+    .nav-links.show {
+        right: 0 !important;
     }
 }
